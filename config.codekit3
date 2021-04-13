@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34127",
   "files" : {
+    "\/.gitattributes" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/.gitattributes",
+      "oF" : 0
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -48,12 +56,52 @@
       "oAP" : "\/design\/structure-tags.sketch",
       "oF" : 0
     },
+    "\/dev\/Content\/_brands.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/Content\/_brands.html",
+      "oF" : 0
+    },
+    "\/dev\/Content\/_cameratypes.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/Content\/_cameratypes.html",
+      "oF" : 0
+    },
+    "\/dev\/Content\/_footer.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/Content\/_footer.html",
+      "oF" : 0
+    },
     "\/dev\/Content\/_header.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/Content\/_header.html",
+      "oF" : 0
+    },
+    "\/dev\/Content\/_hero.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/Content\/_hero.html",
+      "oF" : 0
+    },
+    "\/dev\/Content\/_midpic.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/Content\/_midpic.html",
       "oF" : 0
     },
     "\/dev\/global\/head.kit" : {
