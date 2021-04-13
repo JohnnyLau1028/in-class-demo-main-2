@@ -102,6 +102,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/facebooklogo.png" : {
+      "ft" : 32768,
+      "iS" : 485,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/facebooklogo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/instagramlogo.png" : {
+      "ft" : 32768,
+      "iS" : 748,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/instagramlogo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/shutterstock_288688235-1024x665.jpeg" : {
       "ft" : 16384,
       "iS" : 81627,
@@ -128,6 +154,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/twitterlogo.png" : {
+      "ft" : 32768,
+      "iS" : 580,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/twitterlogo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/xlg_1000-Sony-Alpha-A7-MarkIII-6-Custom_1519667561.jpeg" : {
       "ft" : 16384,
       "iS" : 92339,
@@ -150,6 +189,19 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/youtubelogo.png" : {
+      "ft" : 32768,
+      "iS" : 557,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/youtubelogo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
