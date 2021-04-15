@@ -29,66 +29,6 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/img\/03-1068x713 (1).webp" : {
-      "ft" : 8388608,
-      "iS" : 45450,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/03-1068x713 (1).webp",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-default",
-      "rq" : 75
-    },
-    "\/deploy\/img\/110301-zklxapdcqo-1547127551 (1).jpeg" : {
-      "ft" : 16384,
-      "iS" : 104276,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/110301-zklxapdcqo-1547127551 (1).jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/151867-cameras-review-olympus-e-m1-mark-iii-image1-4t2mz8yxgu (1).jpeg" : {
-      "ft" : 16384,
-      "iS" : 187825,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/151867-cameras-review-olympus-e-m1-mark-iii-image1-4t2mz8yxgu (1).jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/Best-beginner-DSLR-cameras-2020-the-10-finest-DSLRs-for.jpeg" : {
-      "ft" : 16384,
-      "iS" : 150735,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/Best-beginner-DSLR-cameras-2020-the-10-finest-DSLRs-for.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/camera-retro-solid.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/deploy\/img\/camera-retro-solid.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
     "\/deploy\/img\/cameraicon.png" : {
       "ft" : 32768,
       "iS" : 1577,
@@ -128,19 +68,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/EOS-r5_Martin_Bissig_Lifestyle_hero-e90f9dd2-be19-11ea-b23c-8c04ba195b5f (1).jpeg" : {
-      "ft" : 16384,
-      "iS" : 169730,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/EOS-r5_Martin_Bissig_Lifestyle_hero-e90f9dd2-be19-11ea-b23c-8c04ba195b5f (1).jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/img\/facebooklogo.png" : {
       "ft" : 32768,
       "iS" : 485,
@@ -167,6 +94,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/heroimage.jpg" : {
+      "ft" : 16384,
+      "iS" : 193267,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/heroimage.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/instagramlogo.png" : {
       "ft" : 32768,
       "iS" : 748,
@@ -176,6 +116,19 @@
       "oIPL" : 0,
       "opt" : 0,
       "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/middleimage.jpg" : {
+      "ft" : 16384,
+      "iS" : 199771,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/middleimage.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -219,32 +172,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/shutterstock_288688235-1024x665.jpeg" : {
-      "ft" : 16384,
-      "iS" : 81627,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/shutterstock_288688235-1024x665.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/sony-a7-iii-a7r-iii (1).jpeg" : {
-      "ft" : 16384,
-      "iS" : 137087,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/sony-a7-iii-a7r-iii (1).jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/img\/sonyimage.jpg" : {
       "ft" : 16384,
       "iS" : 30816,
@@ -267,32 +194,6 @@
       "oIPL" : 0,
       "opt" : 0,
       "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/xlg_1000-Sony-Alpha-A7-MarkIII-6-Custom_1519667561.jpeg" : {
-      "ft" : 16384,
-      "iS" : 92339,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/xlg_1000-Sony-Alpha-A7-MarkIII-6-Custom_1519667561.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/xt10_1.jpeg" : {
-      "ft" : 16384,
-      "iS" : 53672,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/xt10_1.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
