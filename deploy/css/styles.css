@@ -366,27 +366,7 @@ ul li {
 }
 
 .content {
-  display: grid;
-  grid-template-areas: "header" "hero" "cameratypes" "midpic" "brands" "footer";
   margin-bottom: 24px;
-}
-.content .header {
-  grid-area: header;
-}
-.content .hero {
-  grid-area: hero;
-}
-.content .cameratypes {
-  grid-area: cameratypes;
-}
-.content .midpic {
-  grid-area: midpic;
-}
-.content .brands {
-  grid-area: brands;
-}
-.content .footer {
-  grid-area: footer;
 }
 @media (min-width: 768px) {
   .content {
@@ -402,6 +382,49 @@ ul li {
   .content {
     margin-bottom: 64px;
   }
+}
+
+main {
+  display: grid;
+  grid-template-areas: "header" "hero" "cameratypes" "midpic" "brands" "footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.hero {
+  grid-area: hero;
+}
+.hero ul {
+  display: grid;
+}
+.hero a {
+  display: grid;
+  grid-template-rows: 50px auto 5px;
+}
+
+.cameratypes {
+  grid-area: cameratypes;
+}
+.cameratypes ul {
+  display: grid;
+}
+.cameratypes a {
+  display: grid;
+  grid-template-rows: 50px auto 5px;
+}
+
+.midpic {
+  grid-area: midpic;
+}
+
+.brands {
+  grid-area: brands;
+}
+
+.footer {
+  grid-area: footer;
 }
 
 .header {

@@ -16,33 +16,6 @@ ul {
 }
 
 .content {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "hero"
-        "cameratypes"
-        "midpic"
-        "brands"
-        "footer"
-    
-    ;.header {
-        grid-area: header;
-    }
-    .hero {
-        grid-area: hero;
-    }
-    .cameratypes {
-        grid-area: cameratypes;
-    }
-    .midpic {
-        grid-area: midpic;
-    }
-    .brands {
-        grid-area: brands;
-    }
-    .footer {
-        grid-area: footer;
-    }
     
     margin-bottom: 24px;
 
@@ -56,6 +29,52 @@ ul {
     @include xl {
         margin-bottom: 64px;
     }
+}
+
+main{
+    display: grid;
+        grid-template-areas:
+            "header"
+            "hero"
+            "cameratypes"
+            "midpic"
+            "brands"
+            "footer"
+}
+    
+.header {
+    grid-area: header;
+}
+.hero {
+    grid-area: hero;
+
+    ul {
+            display: grid;
+    }
+    a {
+        display: grid;
+        grid-template-rows: 50px auto 5px;
+    }
+}
+.cameratypes {
+    grid-area: cameratypes;
+
+    ul {
+            display: grid;
+    }
+    a {
+        display: grid;
+        grid-template-rows: 50px auto 5px;
+}
+}
+.midpic {
+    grid-area: midpic;
+}
+.brands {
+    grid-area: brands;
+}
+.footer {
+    grid-area: footer;
 }
 
 .header{
