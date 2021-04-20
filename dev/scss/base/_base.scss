@@ -16,12 +16,48 @@ ul {
 }
 
 .content {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "hero"
+        "cameratypes"
+        "midpic"
+        "brands"
+        "footer"
+    
+    .header {
+        grid-area: header;
+    }
+    .hero {
+        grid-area: hero;
+    }
+    .cameratypes {
+        grid-area: cameratypes;
+    }
+    .midpic {
+        grid-area: midpic;
+    }
+    .brands {
+        grid-area: brands;
+    }
+    .footer {
+        grid-area: footer;
+    }
+    
     margin-bottom: 24px;
 
     @include md {
         margin-bottom: 32px;
+
+        .cameratypes ul {
+            display: grid;
+            grid-template-columns: 200px 200px;
+        }            
     }
 
+    @include lg {
+        margin-bottom: 64px;
+    }
     @include xl {
         margin-bottom: 64px;
     }
