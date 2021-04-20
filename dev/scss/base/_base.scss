@@ -25,7 +25,7 @@ ul {
         "brands"
         "footer"
     
-    .header {
+    ;.header {
         grid-area: header;
     }
     .hero {
@@ -48,11 +48,6 @@ ul {
 
     @include md {
         margin-bottom: 32px;
-
-        .cameratypes ul {
-            display: grid;
-            grid-template-columns: 200px 200px;
-        }            
     }
 
     @include lg {
@@ -60,5 +55,26 @@ ul {
     }
     @include xl {
         margin-bottom: 64px;
+    }
+}
+
+.header{
+    display: grid;
+    grid-column: 20px 20px 20px;
+    .topheader {
+        background-color: blueviolet;
+        
+    }
+}
+
+
+.cameratypes {
+    display: grid;
+    grid-template-rows: 200px 200px;
+
+    .mirrlesscam{
+    display: grid;
+    grid-template-columns: 200px 200px;
+
     }
 }

@@ -366,17 +366,59 @@ ul li {
 }
 
 .content {
+  display: grid;
+  grid-template-areas: "header" "hero" "cameratypes" "midpic" "brands" "footer";
   margin-bottom: 24px;
+}
+.content .header {
+  grid-area: header;
+}
+.content .hero {
+  grid-area: hero;
+}
+.content .cameratypes {
+  grid-area: cameratypes;
+}
+.content .midpic {
+  grid-area: midpic;
+}
+.content .brands {
+  grid-area: brands;
+}
+.content .footer {
+  grid-area: footer;
 }
 @media (min-width: 768px) {
   .content {
     margin-bottom: 32px;
   }
 }
+@media (min-width: 1024px) {
+  .content {
+    margin-bottom: 64px;
+  }
+}
 @media (min-width: 1200px) {
   .content {
     margin-bottom: 64px;
   }
+}
+
+.header {
+  display: grid;
+  grid-column: 20px 20px 20px;
+}
+.header .topheader {
+  background-color: blueviolet;
+}
+
+.cameratypes {
+  display: grid;
+  grid-template-rows: 200px 200px;
+}
+.cameratypes .mirrlesscam {
+  display: grid;
+  grid-template-columns: 200px 200px;
 }
 
 /* =============
