@@ -391,7 +391,6 @@ main {
 
 .header {
   grid-area: header;
-  display: grid;
 }
 
 .hero {
@@ -400,9 +399,13 @@ main {
 .hero ul {
   display: grid;
 }
-.hero a {
+.hero .whatsnew {
   display: grid;
-  grid-template-rows: 50px auto;
+  grid-template-columns: 400px auto;
+}
+.hero .bestcam {
+  display: grid;
+  grid-template-columns: 400px auto;
 }
 @media (min-width: 768px) {
   .hero ul {
@@ -413,12 +416,15 @@ main {
 .cameratypes {
   grid-area: cameratypes;
 }
-.cameratypes ul {
+
+.mirrorlesscam {
   display: grid;
+  grid-template-columns: 400px auto;
 }
-.cameratypes a {
+
+.dslrcam {
   display: grid;
-  grid-template-rows: 50px auto;
+  grid-template-columns: 400px auto;
 }
 
 .midpic {

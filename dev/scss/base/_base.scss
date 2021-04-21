@@ -44,37 +44,45 @@ main{
 
 .header {
     grid-area: header;
-    display: grid;
 
 }
+
 .hero {
     grid-area: hero;
 
     ul {
             display: grid;
     }
-    a {
-        display: grid;
-        grid-template-rows: 50px auto;
-    }
+
+.whatsnew {
+    display: grid;
+    grid-template-columns: 400px auto;
+}
+.bestcam {
+    display: grid;
+    grid-template-columns: 400px auto;
+}
 
     @include md {
         ul {
             grid-template-columns: repeat(12, 1fr);
-
+        }
     }
 }
+
 .cameratypes {
     grid-area: cameratypes;
 
-    ul {
-            display: grid;
-    }
-    a {
-        display: grid;
-        grid-template-rows: 50px auto;
-    }
 }
+.mirrorlesscam {
+    display: grid;
+    grid-template-columns: 400px auto;
+}
+.dslrcam {
+    display: grid;
+    grid-template-columns: 400px auto;
+}
+
 .midpic {
     grid-area: midpic;
 }
