@@ -416,6 +416,9 @@ main {
 .cameratypes {
   grid-area: cameratypes;
 }
+.cameratypes ul {
+  display: grid;
+}
 
 .mirrorlesscam {
   display: grid;

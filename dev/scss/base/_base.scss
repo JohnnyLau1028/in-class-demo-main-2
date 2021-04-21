@@ -51,7 +51,7 @@ main{
     grid-area: hero;
 
     ul {
-            display: grid;
+        display: grid;
     }
 
 .whatsnew {
@@ -72,6 +72,10 @@ main{
 
 .cameratypes {
     grid-area: cameratypes;
+
+    ul {
+        display: grid;
+    }
 
 }
 .mirrorlesscam {
