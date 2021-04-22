@@ -416,18 +416,18 @@ main {
 .cameratypes {
   grid-area: cameratypes;
 }
-.cameratypes ul {
+.cameratypes div {
   display: grid;
 }
 
 .mirrorlesscam {
   display: grid;
-  grid-template-columns: 400px auto;
+  grid-template-columns: 375px auto;
 }
 
 .dslrcam {
   display: grid;
-  grid-template-columns: 400px auto;
+  grid-template-columns: 375px auto;
 }
 
 .midpic {
@@ -437,9 +437,19 @@ main {
 .brands {
   grid-area: brands;
 }
+.brands div {
+  display: grid;
+}
 
 .footer {
   grid-area: footer;
+}
+.footer .social ul {
+  display: flex;
+}
+.footer .locations section ul li {
+  display: grid;
+  grid-template-columns: 20px 200px;
 }
 
 /* =============

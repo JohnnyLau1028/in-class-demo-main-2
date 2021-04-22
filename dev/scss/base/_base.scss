@@ -73,26 +73,43 @@ main{
 .cameratypes {
     grid-area: cameratypes;
 
-    ul {
+    div {
         display: grid;
     }
 
 }
 .mirrorlesscam {
     display: grid;
-    grid-template-columns: 400px auto;
+    grid-template-columns: 375px auto;
 }
 .dslrcam {
     display: grid;
-    grid-template-columns: 400px auto;
+    grid-template-columns: 375px auto;
 }
 
 .midpic {
     grid-area: midpic;
 }
+
 .brands {
     grid-area: brands;
+
+    div {
+        display: grid;
+    }
 }
+
 .footer {
     grid-area: footer;
+
+    .social ul {
+        display: flex;
+    }
+    .locations {
+        section ul li{
+            display: grid;
+            grid-template-columns: 20px 200px;
+        }
+    }
+
 }
