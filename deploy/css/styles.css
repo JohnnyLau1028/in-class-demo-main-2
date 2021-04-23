@@ -399,11 +399,7 @@ main {
 .hero ul {
   display: grid;
 }
-.hero .whatsnew {
-  display: grid;
-  grid-template-columns: 400px auto;
-}
-.hero .bestcam {
+.hero a {
   display: grid;
   grid-template-columns: 400px auto;
 }
@@ -437,8 +433,25 @@ main {
 .brands {
   grid-area: brands;
 }
-.brands div {
+.brands .canon {
   display: grid;
+  grid-template-columns: 300px;
+}
+.brands .nikon {
+  display: grid;
+  grid-template-columns: 300px;
+}
+.brands .sony {
+  display: grid;
+  grid-template-columns: 300px;
+}
+.brands .fujifilm {
+  display: grid;
+  grid-template-columns: 300px;
+}
+.brands .olympus {
+  display: grid;
+  grid-template-columns: 300px;
 }
 
 .footer {
@@ -447,9 +460,15 @@ main {
 .footer .social ul {
   display: flex;
 }
-.footer .locations section ul li {
+.footer .location section ul li {
   display: grid;
-  grid-template-columns: 20px 200px;
+  grid-template-columns: 20px auto;
+}
+@media (min-width: 768px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
 }
 
 /* =============
