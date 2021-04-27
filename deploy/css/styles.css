@@ -405,11 +405,13 @@ main {
 }
 .hero a {
   display: grid;
-  grid-template-columns: 400px auto;
+  grid-template-columns: 375px auto;
 }
 @media (min-width: 768px) {
   .hero ul {
-    grid-template-columns: 500px auto;
+    grid-template-columns: 500px 500px;
+    justify-content: center;
+    grid-gap: 20px;
   }
 }
 
@@ -419,7 +421,9 @@ main {
 @media (min-width: 768px) {
   .cameratypes {
     display: grid;
-    grid-template-columns: 500px auto;
+    grid-template-columns: 500px 500px;
+    justify-content: center;
+    grid-gap: 20px;
   }
 }
 
@@ -442,6 +446,7 @@ main {
 @media (min-width: 768px) {
   .midpic ul {
     grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
   }
   .midpic .cams {
     grid-column: span 7;
@@ -454,6 +459,48 @@ main {
 .brands {
   grid-area: brands;
 }
+.brands .canon {
+  display: grid;
+  grid-template-columns: 350px;
+}
+.brands .nikon {
+  display: grid;
+  grid-template-columns: 350px;
+}
+.brands .sony {
+  display: grid;
+  grid-template-columns: 350px;
+}
+.brands .fujifilm {
+  display: grid;
+  grid-template-columns: 350px;
+}
+.brands .olympus {
+  display: grid;
+  grid-template-columns: 350px;
+}
+@media (min-width: 768px) {
+  .brands .branding {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+  }
+  .brands .branding .canon {
+    grid-column: 2/5;
+  }
+  .brands .branding .nikon {
+    grid-column: 7/11;
+  }
+  .brands .branding .sony {
+    grid-column: 2/5;
+  }
+  .brands .branding .fujifilm {
+    grid-column: 7/11;
+  }
+  .brands .branding .olympus {
+    grid-column: 4/7;
+  }
+}
 
 .footer {
   grid-area: footer;
@@ -463,12 +510,25 @@ main {
 }
 .footer .location section ul li {
   display: grid;
-  grid-template-columns: 20px auto;
+  grid-template-columns: 20px 200px;
 }
 @media (min-width: 768px) {
   .footer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+  }
+  .footer .location {
+    grid-column: 2/5;
+    grid-row: 1/4;
+  }
+  .footer .email {
+    grid-column: 5/8;
+    grid-row: 1/2;
+  }
+  .footer .social {
+    grid-column: 5/6;
   }
 }
 
