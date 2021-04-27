@@ -392,6 +392,10 @@ main {
 .header {
   grid-area: header;
 }
+.header .topheader {
+  display: grid;
+  grid-template-columns: 100px auto;
+}
 
 .hero {
   grid-area: hero;
@@ -405,15 +409,18 @@ main {
 }
 @media (min-width: 768px) {
   .hero ul {
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 500px auto;
   }
 }
 
 .cameratypes {
   grid-area: cameratypes;
 }
-.cameratypes div {
-  display: grid;
+@media (min-width: 768px) {
+  .cameratypes {
+    display: grid;
+    grid-template-columns: 500px auto;
+  }
 }
 
 .mirrorlesscam {
@@ -429,29 +436,23 @@ main {
 .midpic {
   grid-area: midpic;
 }
+.midpic ul {
+  display: grid;
+}
+@media (min-width: 768px) {
+  .midpic ul {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .midpic .cams {
+    grid-column: span 7;
+  }
+  .midpic .lens {
+    grid-column: span 5;
+  }
+}
 
 .brands {
   grid-area: brands;
-}
-.brands .canon {
-  display: grid;
-  grid-template-columns: 300px;
-}
-.brands .nikon {
-  display: grid;
-  grid-template-columns: 300px;
-}
-.brands .sony {
-  display: grid;
-  grid-template-columns: 300px;
-}
-.brands .fujifilm {
-  display: grid;
-  grid-template-columns: 300px;
-}
-.brands .olympus {
-  display: grid;
-  grid-template-columns: 300px;
 }
 
 .footer {
@@ -490,4 +491,8 @@ p {
 
 .section-title {
   font-weight: 300;
+}
+
+.midpic .accs {
+  display: none;
 }
