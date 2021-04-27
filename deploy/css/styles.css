@@ -439,6 +439,7 @@ main {
 
 .midpic {
   grid-area: midpic;
+  justify-content: center;
 }
 .midpic ul {
   display: grid;
@@ -446,13 +447,17 @@ main {
 @media (min-width: 768px) {
   .midpic ul {
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     justify-content: center;
   }
-  .midpic .cams {
-    grid-column: span 7;
+  .midpic ul .cams {
+    grid-column: 1/7;
   }
-  .midpic .lens {
-    grid-column: span 5;
+  .midpic ul .lens {
+    grid-column: 7/12;
+  }
+  .midpic ul .accs {
+    grid-column: 7/12;
   }
 }
 
@@ -553,6 +558,52 @@ p {
   font-weight: 300;
 }
 
-.midpic .accs {
+.heroimage {
+  background: url("../../../deploy/img/heroimage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+}
+
+.midimage3 {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .midimage3 {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  .midimage3 {
+    display: block;
+  }
+}
+.midimage1 {
+  background: url("../../../deploy/img/middleimage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.midimage2 {
+  background: url("../../../deploy/img/middleimage2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 450px;
+}
+
+.midimage3 {
+  background: url("../../../deploy/img/middleimage3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 450px;
 }

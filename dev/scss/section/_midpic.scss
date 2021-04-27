@@ -1,5 +1,40 @@
-.midpic {
-    .accs{
-        display: none;
+.midimage3 {
+    display: none;
+}
+@include md{
+    .midimage3 {
+        display: block;
     }
+}
+@include lg{
+    .midimage3 {
+        display: block;
+    }
+}
+
+.midimage1 {
+    background: url("../../../deploy/img/middleimage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.midimage2 {
+    background: url("../../../deploy/img/middleimage2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+}
+
+.midimage3 {
+    background: url("../../../deploy/img/middleimage3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
 }

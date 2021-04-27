@@ -92,7 +92,7 @@ main{
 
 .midpic {
     grid-area: midpic;
-
+    justify-content: center;
     ul {
         display: grid;
     }
@@ -100,17 +100,20 @@ main{
     @include md {
         ul {
             grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(2, 1fr);
             justify-content: center;
-    }
-    .cams {
-        grid-column: span 7;
-    }
-    .lens {
-        grid-column: span 5;
-    }
+            
+            .cams {
+                grid-column: 1 / 7;
+            }
+            .lens {
+                grid-column: 7 / 12;
+            }
+            .accs {
+                grid-column: 7 / 12;
+            }
         }
-        
-    
+    }
 }
 
 .brands {
