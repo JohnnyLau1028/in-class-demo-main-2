@@ -1,8 +1,10 @@
-.heroimage {
-    background: url("../../../deploy/img/heroimage.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50vh;
-    }
+.hero {
+    .heroimage {
+        background: url("../../../deploy/img/heroimage.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 650px;
+        }
+}
