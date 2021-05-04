@@ -1,40 +1,74 @@
 .midpic {
     .cams {
-        background: url("../../../deploy/img/middleimage.jpg");
+        background-image: url("../../../deploy/img/middleimage.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        @include md {
+            height: 475px;
+            align-items: center;
+            justify-content: center;
+        }
+        @include lg {
+            height: 600px;
+            align-items: center;
+            justify-content: center;
+        }
+        @include xl{
+            height: 825px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+    .lens {
+        background-image: url("../../../deploy/img/middleimage2.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         width: 100%;
         height: 100vh;
+        @include md {
+            height: 475px;
+            align-items: center;
+            justify-content: center;
+        }
+        @include lg {
+            height: 600px;
+            align-items: center;
+            justify-content: center;
+        }
+        @include xl{
+            height: 412.5px;
+            align-items: center;
+            justify-content: center;
+        }
     }
     
-    .lens {
-        background: url("../../../deploy/img/middleimage2.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 50vh;
-    }
-    
-    .accs {background: url("../../../deploy/img/middleimage3.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 50vh;
-    }
-}
-.midimage3 {
-    display: none;
-}
-@include md{
-    .midimage3 {
-        display: block;
-    }
-}
-@include lg{
-    .midimage3 {
-        display: block;
+    .accs {
+        display: none;
+        @include md{
+            background: url("../../../deploy/img/middleimage3.jpg");
+            display: none;
+        }
+        @include lg{
+            background: url("../../../deploy/img/middleimage3.jpg");
+            display: none;
+        }
+        @include xl{
+            display: block;
+            background-image: url("../../../deploy/img/middleimage3.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 412.5px;
+        }
     }
 }

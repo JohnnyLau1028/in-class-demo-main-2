@@ -446,18 +446,7 @@ main {
 }
 @media (min-width: 768px) {
   .midpic ul {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: center;
-  }
-  .midpic ul .cams {
-    grid-column: 1/7;
-  }
-  .midpic ul .lens {
-    grid-column: 7/12;
-  }
-  .midpic ul .accs {
-    grid-column: 7/12;
+    grid-template-columns: 60% auto;
   }
 }
 
@@ -491,19 +480,41 @@ main {
     justify-content: center;
   }
   .brands .branding .canon {
+    grid-column: 3/6;
+  }
+  .brands .branding .nikon {
+    grid-column: 8/12;
+  }
+  .brands .branding .sony {
+    grid-column: 3/6;
+  }
+  .brands .branding .fujifilm {
+    grid-column: 8/12;
+  }
+  .brands .branding .olympus {
+    grid-column: 5/9;
+  }
+}
+@media (min-width: 1024px) {
+  .brands .branding {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+  }
+  .brands .branding .canon {
     grid-column: 2/5;
   }
   .brands .branding .nikon {
-    grid-column: 7/11;
+    grid-column: 6/9;
   }
   .brands .branding .sony {
-    grid-column: 2/5;
+    grid-column: 10/12;
   }
   .brands .branding .fujifilm {
-    grid-column: 7/11;
+    grid-column: 3/6;
   }
   .brands .branding .olympus {
-    grid-column: 4/7;
+    grid-column: 8/11;
   }
 }
 
@@ -559,7 +570,7 @@ p {
 }
 
 .hero .heroimage {
-  background: url("../../../deploy/img/heroimage.jpg");
+  background-image: url("../../../deploy/img/heroimage.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -568,41 +579,90 @@ p {
 }
 
 .midpic .cams {
-  background: url("../../../deploy/img/middleimage.jpg");
+  background-image: url("../../../deploy/img/middleimage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+@media (min-width: 768px) {
+  .midpic .cams {
+    height: 475px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  .midpic .cams {
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .midpic .cams {
+    height: 825px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.midpic .lens {
+  background-image: url("../../../deploy/img/middleimage2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
 }
-.midpic .lens {
-  background: url("../../../deploy/img/middleimage2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 50vh;
-}
-.midpic .accs {
-  background: url("../../../deploy/img/middleimage3.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 50vh;
-}
-
-.midimage3 {
-  display: none;
-}
-
 @media (min-width: 768px) {
-  .midimage3 {
-    display: block;
+  .midpic .lens {
+    height: 475px;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (min-width: 1024px) {
-  .midimage3 {
+  .midpic .lens {
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .midpic .lens {
+    height: 412.5px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.midpic .accs {
+  display: none;
+}
+@media (min-width: 768px) {
+  .midpic .accs {
+    background: url("../../../deploy/img/middleimage3.jpg");
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .midpic .accs {
+    background: url("../../../deploy/img/middleimage3.jpg");
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .midpic .accs {
     display: block;
+    background-image: url("../../../deploy/img/middleimage3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 412.5px;
   }
 }

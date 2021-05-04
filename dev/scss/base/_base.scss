@@ -22,7 +22,6 @@ ul {
     @include md {
         margin-bottom: 32px;
     }
-
     @include lg {
         margin-bottom: 64px;
     }
@@ -99,20 +98,8 @@ main{
 
     @include md {
         ul {
-            grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            justify-content: center;
-            
-            .cams {
-                grid-column: 1 / 7;
+            grid-template-columns: 60% auto;
             }
-            .lens {
-                grid-column: 7 / 12;
-            }
-            .accs {
-                grid-column: 7 / 12;
-            }
-        }
     }
 }
 
@@ -138,7 +125,6 @@ main{
     .olympus {
         display: grid;
         grid-template-columns: 350px; 
-        
     }
 
    .branding {
@@ -148,24 +134,44 @@ main{
             justify-content: center;
 
             .canon {
+                grid-column: 3 / 6;
+            }
+            .nikon {
+                grid-column: 8 / 12;
+            }
+            .sony {
+                grid-column: 3 / 6;
+            }
+            .fujifilm {
+                grid-column: 8 / 12;
+            }
+            .olympus {
+                grid-column: 5 / 9;
+            }
+        }
+        @include lg {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            justify-content: center;
+
+            .canon {
                 grid-column: 2 / 5;
             }
             .nikon {
-                grid-column: 7 / 11;
+                grid-column: 6 / 9;
             }
             .sony {
-                grid-column: 2 / 5;
+                grid-column: 10 / 12;
             }
             .fujifilm {
-                grid-column: 7 / 11;
+                grid-column: 3 / 6;
             }
             .olympus {
-                grid-column: 4 / 7;
+                grid-column: 8 / 11;
             }
         }
-   }
+    }
 }
-
 
 .footer {
     grid-area: footer;
@@ -197,6 +203,4 @@ main{
             grid-column: 5 / 6;
         }
     }
-
-
 }
