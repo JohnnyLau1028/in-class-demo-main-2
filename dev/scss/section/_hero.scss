@@ -6,5 +6,23 @@
         background-repeat: no-repeat;
         width: 100%;
         height: 90vh;
+    }
+
+    ul {
+        .details h5 {
+            display: none;
         }
+        .details a {
+            color: $darkpurpleblue;
+            padding: 20px;
+            min-height: 110px;
+        }
+        .details1 a {
+            background: $yellow;
+        }
+        .details2 a {
+            background: $lightyellow;
+        }
+    }
 }
+

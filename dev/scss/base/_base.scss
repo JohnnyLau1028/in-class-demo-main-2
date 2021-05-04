@@ -48,6 +48,10 @@ main{
         display: grid;
         grid-template-columns: 100px auto;
     }
+    form {
+		display: grid;
+		grid-template-columns: 95% auto;
+	}
 }
 
 .hero {

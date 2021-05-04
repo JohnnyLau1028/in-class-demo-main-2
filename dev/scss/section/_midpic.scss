@@ -1,4 +1,21 @@
 .midpic {
+    @include md {
+        ul {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+    }
+    @include lg {
+        ul {
+            grid-template-columns:60% auto;
+        }
+    }
+    @include xl {
+        ul {
+            grid-template-columns:55% auto;
+        }
+    }
+
     .cams {
         background-image: url("../../../deploy/img/middleimage.jpg");
         background-size: cover;

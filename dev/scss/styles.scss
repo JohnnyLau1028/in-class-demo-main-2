@@ -10,5 +10,9 @@
 @import "base/_typography";
 
 // Layout Styles
+@import "layout/_header";
+@import "layout/_footer";
+
+// Section Styles
 @import "section/_hero";
 @import "section/_midpic";

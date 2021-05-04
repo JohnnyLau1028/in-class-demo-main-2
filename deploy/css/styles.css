@@ -396,6 +396,10 @@ main {
   display: grid;
   grid-template-columns: 100px auto;
 }
+.header form {
+  display: grid;
+  grid-template-columns: 95% auto;
+}
 
 .hero {
   grid-area: hero;
@@ -569,6 +573,11 @@ p {
   font-weight: 300;
 }
 
+header {
+  background: #717AAD;
+  padding: 30px;
+}
+
 .hero .heroimage {
   background-image: url("../../../deploy/img/heroimage.jpg");
   background-size: cover;
@@ -577,7 +586,37 @@ p {
   width: 100%;
   height: 90vh;
 }
+.hero ul .details h5 {
+  display: none;
+}
+.hero ul .details a {
+  color: #313862;
+  padding: 20px;
+  min-height: 110px;
+}
+.hero ul .details1 a {
+  background: #Fae06a;
+}
+.hero ul .details2 a {
+  background: #fbeba2;
+}
 
+@media (min-width: 768px) {
+  .midpic ul {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media (min-width: 1024px) {
+  .midpic ul {
+    grid-template-columns: 60% auto;
+  }
+}
+@media (min-width: 1200px) {
+  .midpic ul {
+    grid-template-columns: 55% auto;
+  }
+}
 .midpic .cams {
   background-image: url("../../../deploy/img/middleimage.jpg");
   background-size: cover;
