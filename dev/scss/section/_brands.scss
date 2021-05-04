@@ -1,13 +1,13 @@
 .brands {
     @include md{
-        width: 75%;
-        margin: 30px auto;
+        width: 80%;
+        margin: 80px auto;
     }
     .canon {
         background: $purple;
 
 		.new1 {
-			padding: 30px 60px;
+			padding:20px 30px 20px;
 		}
 
 		a {
@@ -19,7 +19,7 @@
         background: $purple;
 
 		.new2 {
-			padding: 30px 60px;
+			padding: 20px 30px 20px;
 		}
 
 		a {
@@ -30,7 +30,7 @@
         background: $purple;
 
 		.new3 {
-			padding: 30px 60px;
+			padding: 20px 30px 20px;
 		}
 
 		a {
@@ -41,7 +41,7 @@
         background: $purple;
 
 		.new4 {
-			padding: 30px 60px;
+			padding: 20px 30px 20px;
 		}
 
 		a {
@@ -52,7 +52,7 @@
         background: $purple;
 
 		.new5 {
-			padding: 30px 60px;
+			padding: 20px 30px 20px;
 		}
 
 		a {
@@ -60,4 +60,31 @@
 			padding: 5px 10px;
 		}
     } 
+    
+    .canonimage {
+        background: url("deploy/img/canonimage.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .nikonimage {
+        background: url("deploy/img/nikonimage.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .sonyimage {
+        background: url("deploy/img/sonyimage.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .fujifilmimage {
+        background: url("deploy/img/fujifilmimage.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .olympusimage {
+        background: url("deploy/img/olympusimage.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 }
+
