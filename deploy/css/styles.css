@@ -533,6 +533,25 @@ main {
     grid-column: 8/11;
   }
 }
+@media (min-width: 1024px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+  }
+  .footer .location {
+    grid-column: 3/6;
+    grid-row: 1/4;
+  }
+  .footer .email {
+    grid-column: 6/9;
+    grid-row: 1/2;
+  }
+  .footer .social {
+    grid-column: 10/12;
+  }
+}
 
 /* =============
     Typography
@@ -558,6 +577,21 @@ p {
 header {
   background: #717AAD;
   padding: 30px;
+}
+header .search {
+  height: 20px;
+  margin: 20px 0 0;
+}
+header .search form input {
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 20px;
+}
+header .search form button {
+  background: #Fae06a;
+  border: none;
+  border-radius: 4px;
+  height: 50px;
 }
 
 .footer {
