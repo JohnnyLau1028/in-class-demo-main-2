@@ -409,11 +409,11 @@ main {
 }
 .hero a {
   display: grid;
-  grid-template-columns: 375px auto;
+  grid-template-columns: 75% auto;
 }
 @media (min-width: 768px) {
   .hero ul {
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 50% 50%;
     justify-content: center;
     grid-gap: 20px;
   }
@@ -425,7 +425,7 @@ main {
 @media (min-width: 768px) {
   .cameratypes {
     display: grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 50% 50%;
     justify-content: center;
     grid-gap: 20px;
   }
@@ -433,12 +433,12 @@ main {
 
 .mirrorlesscam {
   display: grid;
-  grid-template-columns: 375px auto;
+  grid-template-columns: 70% auto;
 }
 
 .dslrcam {
   display: grid;
-  grid-template-columns: 375px auto;
+  grid-template-columns: 70% auto;
 }
 
 .midpic {
@@ -459,44 +459,45 @@ main {
 }
 .brands .canon {
   display: grid;
-  grid-template-columns: 350px;
+  grid-template-columns: 100%;
 }
 .brands .nikon {
   display: grid;
-  grid-template-columns: 350px;
+  grid-template-columns: 100%;
 }
 .brands .sony {
   display: grid;
-  grid-template-columns: 350px;
+  grid-template-columns: 100%;
 }
 .brands .fujifilm {
   display: grid;
-  grid-template-columns: 350px;
+  grid-template-columns: 100%;
 }
 .brands .olympus {
   display: grid;
-  grid-template-columns: 350px;
+  grid-template-columns: 100%;
 }
 @media (min-width: 768px) {
   .brands .branding {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 30px;
     justify-content: center;
   }
   .brands .branding .canon {
-    grid-column: 3/6;
+    grid-column: 1/2;
   }
   .brands .branding .nikon {
-    grid-column: 8/12;
+    grid-column: 4/6;
   }
   .brands .branding .sony {
-    grid-column: 3/6;
+    grid-column: 1/2;
   }
   .brands .branding .fujifilm {
-    grid-column: 8/12;
+    grid-column: 4/6;
   }
   .brands .branding .olympus {
-    grid-column: 5/9;
+    grid-column: 2/4;
   }
 }
 @media (min-width: 1024px) {
@@ -540,15 +541,15 @@ main {
     justify-content: center;
   }
   .footer .location {
-    grid-column: 2/5;
+    grid-column: 5/8;
     grid-row: 1/4;
   }
   .footer .email {
-    grid-column: 5/8;
+    grid-column: 8/11;
     grid-row: 1/2;
   }
   .footer .social {
-    grid-column: 5/6;
+    grid-column: 8/11;
   }
 }
 
@@ -578,6 +579,31 @@ header {
   padding: 30px;
 }
 
+.footer {
+  justify-content: center;
+  background: #717AAD;
+  padding: 50px 0;
+}
+.footer .location a {
+  color: #313862;
+}
+.footer h5, .footer h4 {
+  color: #313862;
+}
+.footer .icon {
+  color: #Fae06a;
+}
+.footer address {
+  color: #313862;
+}
+.footer .email form {
+  padding: 20px 0;
+}
+.footer .social-icon a {
+  color: #Fae06a;
+  padding: 10px 5px;
+}
+
 .hero .heroimage {
   background-image: url("../../../deploy/img/heroimage.jpg");
   background-size: cover;
@@ -586,19 +612,25 @@ header {
   width: 100%;
   height: 90vh;
 }
-.hero ul .details h5 {
+.hero ul h5 {
   display: none;
 }
-.hero ul .details a {
+.hero ul a {
   color: #313862;
-  padding: 20px;
-  min-height: 110px;
+  padding: 10px;
+  min-height: 80px;
 }
 .hero ul .details1 a {
   background: #Fae06a;
 }
 .hero ul .details2 a {
   background: #fbeba2;
+}
+@media (min-width: 768px) {
+  .hero ul h5 {
+    display: inline;
+    padding: 15px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -704,4 +736,86 @@ header {
     width: 100%;
     height: 412.5px;
   }
+}
+
+.cameratypes .mirrorlesscam {
+  margin: 20px 0;
+  padding: 20px;
+  background: #313862;
+}
+.cameratypes .mirrorlesscam a {
+  background: #Fae06a;
+  padding: 10px 15px;
+}
+.cameratypes .dslrcam {
+  margin: 20px 0;
+  padding: 20px;
+  background: #313862;
+}
+.cameratypes .dslrcam a {
+  background: #Fae06a;
+  padding: 10px 15px;
+}
+@media (min-width: 1024px) {
+  .cameratypes {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .brands {
+    width: 75%;
+    margin: 30px auto;
+  }
+}
+.brands .canon {
+  background: #9d8ff4;
+}
+.brands .canon .new1 {
+  padding: 30px 60px;
+}
+.brands .canon a {
+  background: #Fae06a;
+  padding: 5px 10px;
+}
+.brands .nikon {
+  background: #9d8ff4;
+}
+.brands .nikon .new2 {
+  padding: 30px 60px;
+}
+.brands .nikon a {
+  background: #Fae06a;
+  padding: 5px 10px;
+}
+.brands .sony {
+  background: #9d8ff4;
+}
+.brands .sony .new3 {
+  padding: 30px 60px;
+}
+.brands .sony a {
+  background: #Fae06a;
+  padding: 5px 10px;
+}
+.brands .fujifilm {
+  background: #9d8ff4;
+}
+.brands .fujifilm .new4 {
+  padding: 30px 60px;
+}
+.brands .fujifilm a {
+  background: #Fae06a;
+  padding: 5px 10px;
+}
+.brands .olympus {
+  background: #9d8ff4;
+}
+.brands .olympus .new5 {
+  padding: 30px 60px;
+}
+.brands .olympus a {
+  background: #Fae06a;
+  padding: 5px 10px;
 }

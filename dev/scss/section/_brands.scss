@@ -1,0 +1,63 @@
+.brands {
+    @include md{
+        width: 75%;
+        margin: 30px auto;
+    }
+    .canon {
+        background: $purple;
+
+		.new1 {
+			padding: 30px 60px;
+		}
+
+		a {
+			background: $yellow;
+			padding: 5px 10px;
+		}
+    } 
+    .nikon {
+        background: $purple;
+
+		.new2 {
+			padding: 30px 60px;
+		}
+
+		a {
+			background: $yellow;
+			padding: 5px 10px;
+		}
+    } .sony {
+        background: $purple;
+
+		.new3 {
+			padding: 30px 60px;
+		}
+
+		a {
+			background: $yellow;
+			padding: 5px 10px;
+		}
+    } .fujifilm {
+        background: $purple;
+
+		.new4 {
+			padding: 30px 60px;
+		}
+
+		a {
+			background: $yellow;
+			padding: 5px 10px;
+		}
+    } .olympus {
+        background: $purple;
+
+		.new5 {
+			padding: 30px 60px;
+		}
+
+		a {
+			background: $yellow;
+			padding: 5px 10px;
+		}
+    } 
+}

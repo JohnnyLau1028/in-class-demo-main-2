@@ -9,13 +9,13 @@
     }
 
     ul {
-        .details h5 {
+        h5 {
             display: none;
         }
-        .details a {
+        a {
             color: $darkpurpleblue;
-            padding: 20px;
-            min-height: 110px;
+            padding: 10px;
+            min-height: 80px;
         }
         .details1 a {
             background: $yellow;
@@ -23,6 +23,13 @@
         .details2 a {
             background: $lightyellow;
         }
+
+        @include md {
+			 h5 {
+				display: inline;
+				padding: 15px;
+			}
+		}
     }
 }
 

@@ -62,12 +62,12 @@ main{
     }
     a {
         display: grid;
-        grid-template-columns: 375px auto;
+        grid-template-columns: 75% auto;
     }
 
     @include md {
         ul {
-           grid-template-columns: 500px 500px;
+           grid-template-columns: 50% 50%;
            justify-content: center;
            grid-gap: 20px;
         }
@@ -79,18 +79,18 @@ main{
 
     @include md{
         display: grid;
-        grid-template-columns: 500px 500px;
+        grid-template-columns: 50% 50%;
         justify-content: center;
         grid-gap: 20px;
     }
 }
 .mirrorlesscam {
     display: grid;
-    grid-template-columns: 375px auto;
+    grid-template-columns: 70% auto;
 }
 .dslrcam {
     display: grid;
-    grid-template-columns: 375px auto;
+    grid-template-columns: 70% auto;
 }
 
 .midpic {
@@ -109,48 +109,49 @@ main{
 
 .brands {
     grid-area: brands;
-
+   
     .canon {
         display: grid;
-        grid-template-columns: 350px;
+        grid-template-columns: 100%;
     }
     .nikon {
         display: grid;
-        grid-template-columns: 350px;
+        grid-template-columns: 100%;
     }
     .sony {
         display: grid;
-        grid-template-columns: 350px;
+        grid-template-columns: 100%;
     }
     .fujifilm {
         display: grid;
-        grid-template-columns: 350px;
+        grid-template-columns: 100%;
     }
     .olympus {
         display: grid;
-        grid-template-columns: 350px; 
+        grid-template-columns: 100%; 
     }
 
    .branding {
         @include md {
             display: grid;
-            grid-template-columns: repeat(12, 1fr);
+            grid-template-columns: repeat(6 ,1fr);
+            grid-gap: 30px;
             justify-content: center;
 
             .canon {
-                grid-column: 3 / 6;
+                grid-column: 1 / 2;
             }
             .nikon {
-                grid-column: 8 / 12;
+                grid-column: 4 / 6;
             }
             .sony {
-                grid-column: 3 / 6;
+                grid-column: 1 / 2;
             }
             .fujifilm {
-                grid-column: 8 / 12;
+                grid-column: 4 / 6;
             }
             .olympus {
-                grid-column: 5 / 9;
+                grid-column: 2 / 4 ;
             }
         }
         @include lg {
@@ -196,15 +197,15 @@ main{
         justify-content: center;
 
         .location {
-            grid-column: 2 / 5;
+            grid-column: 5 / 8;
             grid-row: 1 / 4;
         }
         .email {
-            grid-column: 5 / 8;
+            grid-column: 8 / 11;
             grid-row: 1 / 2;
         }
         .social {
-            grid-column: 5 / 6;
+            grid-column: 8 / 11;
         }
     }
 }

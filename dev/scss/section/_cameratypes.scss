@@ -1,0 +1,26 @@
+.cameratypes {
+	.mirrorlesscam {
+		margin: 20px 0;
+		padding: 20px;
+		background: $darkpurpleblue;
+
+		a {
+			background: $yellow;
+			padding: 10px 15px;
+		}
+	}
+    .dslrcam {
+		margin: 20px 0;
+		padding: 20px;
+		background: $darkpurpleblue;
+
+		a {
+			background: $yellow;
+			padding: 10px 15px;
+		}
+	}
+    @include lg {
+		width: 75%;
+        margin: 0 auto;
+    }
+}
