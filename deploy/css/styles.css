@@ -447,10 +447,27 @@ main {
 }
 .midpic ul {
   display: grid;
+  grid-template-rows: 300px 350px;
 }
 @media (min-width: 768px) {
   .midpic ul {
+    grid-template-columns: 50% auto;
+    grid-template-rows: 650px;
+  }
+}
+@media (min-width: 1200px) {
+  .midpic ul {
     grid-template-columns: 60% auto;
+    grid-template-rows: 300px 300px 300px;
+  }
+  .midpic ul .cams {
+    grid-row: 1/4;
+  }
+  .midpic ul .lens {
+    grid-row: 1/2;
+  }
+  .midpic ul .accs {
+    grid-row: 2/4;
   }
 }
 
@@ -463,21 +480,22 @@ main {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
     justify-content: center;
+    grid-template-areas: "canon canon nikon nikon" "sony sony fuji fuji" " . olym olym . ";
   }
   .brands .branding .canon {
-    grid-column: 2/3;
+    grid-area: canon;
   }
   .brands .branding .nikon {
-    grid-column: 3/4;
+    grid-area: nikon;
   }
   .brands .branding .sony {
-    grid-column: 2/3;
+    grid-area: sony;
   }
   .brands .branding .fujifilm {
-    grid-column: 3/4;
+    grid-area: fuji;
   }
   .brands .branding .olympus {
-    grid-column: 2/3;
+    grid-area: olym;
   }
 }
 @media (min-width: 1024px) {
@@ -486,21 +504,7 @@ main {
     grid-template-columns: repeat(6, 1fr);
     justify-content: center;
     grid-gap: 30px;
-  }
-  .brands .branding .canon {
-    grid-column: 2/3;
-  }
-  .brands .branding .nikon {
-    grid-column: 3/4;
-  }
-  .brands .branding .sony {
-    grid-column: 4/5;
-  }
-  .brands .branding .fujifilm {
-    grid-column: 2/3;
-  }
-  .brands .branding .olympus {
-    grid-column: 3/4;
+    grid-template-areas: "canon canon nikon nikon sony sony" " . fuji fuji olym olym .";
   }
 }
 
@@ -557,7 +561,7 @@ main {
     Typography
 ============= */
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 h1, h2, h3, h4 {
@@ -611,8 +615,17 @@ header .search form button {
 .footer address {
   color: #313862;
 }
+.footer .email {
+  margin: 20px 0;
+}
 .footer .email form {
   padding: 20px 0;
+}
+.footer .email form button {
+  background: #Fae06a;
+  border: none;
+  border-radius: 2px;
+  height: 20px;
 }
 .footer .social-icon a {
   color: #Fae06a;
@@ -672,25 +685,21 @@ header .search form button {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
 }
 @media (min-width: 768px) {
   .midpic .cams {
-    height: 475px;
     align-items: center;
     justify-content: center;
   }
 }
 @media (min-width: 1024px) {
   .midpic .cams {
-    height: 600px;
     align-items: center;
     justify-content: center;
   }
 }
 @media (min-width: 1200px) {
   .midpic .cams {
-    height: 825px;
     align-items: center;
     justify-content: center;
   }
@@ -701,25 +710,21 @@ header .search form button {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
 }
 @media (min-width: 768px) {
   .midpic .lens {
-    height: 475px;
     align-items: center;
     justify-content: center;
   }
 }
 @media (min-width: 1024px) {
   .midpic .lens {
-    height: 600px;
     align-items: center;
     justify-content: center;
   }
 }
 @media (min-width: 1200px) {
   .midpic .lens {
-    height: 412.5px;
     align-items: center;
     justify-content: center;
   }
@@ -749,7 +754,6 @@ header .search form button {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 412.5px;
   }
 }
 
@@ -758,7 +762,10 @@ header .search form button {
   padding: 20px;
   background: #313862;
 }
-.cameratypes .mirrorlesscam a {
+.cameratypes .mirrorlesscam .orderhere {
+  margin: 30px 0 0;
+}
+.cameratypes .mirrorlesscam .orderhere a {
   background: #Fae06a;
   padding: 10px 15px;
 }
@@ -767,7 +774,10 @@ header .search form button {
   padding: 20px;
   background: #313862;
 }
-.cameratypes .dslrcam a {
+.cameratypes .dslrcam .orderhere {
+  margin: 30px 0 0;
+}
+.cameratypes .dslrcam .orderhere a {
   background: #Fae06a;
   padding: 10px 15px;
 }
@@ -790,7 +800,10 @@ header .search form button {
 .brands .canon .new1 {
   padding: 20px 30px 20px;
 }
-.brands .canon a {
+.brands .canon .link {
+  margin: 30px 0 0;
+}
+.brands .canon .link a {
   background: #Fae06a;
   padding: 5px 10px;
 }
@@ -800,7 +813,10 @@ header .search form button {
 .brands .nikon .new2 {
   padding: 20px 30px 20px;
 }
-.brands .nikon a {
+.brands .nikon .link {
+  margin: 30px 0 0;
+}
+.brands .nikon .link a {
   background: #Fae06a;
   padding: 5px 10px;
 }
@@ -810,7 +826,10 @@ header .search form button {
 .brands .sony .new3 {
   padding: 20px 30px 20px;
 }
-.brands .sony a {
+.brands .sony .link {
+  margin: 30px 0 0;
+}
+.brands .sony .link a {
   background: #Fae06a;
   padding: 5px 10px;
 }
@@ -820,7 +839,10 @@ header .search form button {
 .brands .fujifilm .new4 {
   padding: 20px 30px 20px;
 }
-.brands .fujifilm a {
+.brands .fujifilm .link {
+  margin: 30px 0 0;
+}
+.brands .fujifilm .link a {
   background: #Fae06a;
   padding: 5px 10px;
 }
@@ -830,32 +852,40 @@ header .search form button {
 .brands .olympus .new5 {
   padding: 20px 30px 20px;
 }
-.brands .olympus a {
+.brands .olympus .link {
+  margin: 30px 0 0;
+}
+.brands .olympus .link a {
   background: #Fae06a;
   padding: 5px 10px;
 }
 .brands .canonimage {
-  background: url("deploy/img/canonimage.jpg") no-repeat;
+  background: url("/deploy/img/canonimage.jpg") no-repeat;
   background-size: cover;
   background-position: center;
+  height: 250px;
 }
 .brands .nikonimage {
-  background: url("deploy/img/nikonimage.jpg") no-repeat;
+  background: url("/deploy/img/nikonimage.jpg") no-repeat;
   background-size: cover;
   background-position: center;
+  height: 250px;
 }
 .brands .sonyimage {
-  background: url("deploy/img/sonyimage.jpg") no-repeat;
+  background: url("/deploy/img/sonyimage.jpg") no-repeat;
   background-size: cover;
   background-position: center;
+  height: 250px;
 }
 .brands .fujifilmimage {
-  background: url("deploy/img/fujifilmimage.jpg") no-repeat;
+  background: url("/deploy/img/fujifilmimage.jpg") no-repeat;
   background-size: cover;
   background-position: center;
+  height: 250px;
 }
 .brands .olympusimage {
-  background: url("deploy/img/olympusimage.jpg") no-repeat;
+  background: url("/deploy/img/olympusimage.jpg") no-repeat;
   background-size: cover;
   background-position: center;
+  height: 250px;
 }

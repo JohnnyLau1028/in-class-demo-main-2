@@ -22,9 +22,16 @@
 	}
 
 	.email {
+		margin: 20px 0;
 		form {
 			padding: 20px 0; 
 		}
+		form button {
+			background: $yellow;
+			border: none;
+			border-radius: 2px;
+			height: 20px;
+			}
 	}
 
 	.social-icon a {

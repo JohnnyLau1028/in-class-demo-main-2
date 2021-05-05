@@ -98,12 +98,31 @@ main{
     justify-content: center;
     ul {
         display: grid;
+        grid-template-rows: 300px 350px;
     }
 
     @include md {
         ul {
+            grid-template-columns: 50% auto;
+            grid-template-rows: 650px;
+        }
+    }
+
+    @include xl {
+        ul {
             grid-template-columns: 60% auto;
+            grid-template-rows: 300px 300px 300px;
+            
+            .cams{
+                grid-row: 1 / 4;
             }
+            .lens {
+                grid-row: 1 / 2;
+            }
+            .accs {
+                grid-row: 2 / 4;
+            }
+        }
     }
 }
 
@@ -116,21 +135,25 @@ main{
             grid-template-columns: repeat(4 ,1fr);
             grid-gap: 30px;
             justify-content: center;
+            grid-template-areas: 
+            "canon canon nikon nikon"
+            "sony sony fuji fuji"
+            " . olym olym . " ;
 
             .canon {
-                grid-column: 2 / 3;
+                grid-area: canon;
             }
             .nikon {
-                grid-column: 3 / 4;
+                grid-area: nikon
             }
             .sony {
-                grid-column: 2 / 3;
+                grid-area: sony;
             }
             .fujifilm {
-                grid-column: 3 / 4;
+                grid-area: fuji;
             }
             .olympus {
-                grid-column: 2 / 3 ;
+                grid-area: olym;
             }
         }
         @include lg {
@@ -138,22 +161,10 @@ main{
             grid-template-columns: repeat(6, 1fr);
             justify-content: center;
             grid-gap: 30px;
+            grid-template-areas: 
+            "canon canon nikon nikon sony sony"
+            " . fuji fuji olym olym .";
 
-            .canon {
-                grid-column: 2 / 3;
-            }
-            .nikon {
-                grid-column: 3 / 4;
-            }
-            .sony {
-                grid-column: 4 / 5;
-            }
-            .fujifilm {
-                grid-column: 2 / 3;
-            }
-            .olympus {
-                grid-column: 3 / 4;
-            }
         }
     }
 }

@@ -10,10 +10,13 @@
 			padding:20px 30px 20px;
 		}
 
-		a {
-			background: $yellow;
-			padding: 5px 10px;
-		}
+		.link {
+            a {
+                background: $yellow;
+                padding: 5px 10px;
+            }
+            margin: 30px 0 0;
+        }
     } 
     .nikon {
         background: $purple;
@@ -22,10 +25,13 @@
 			padding: 20px 30px 20px;
 		}
 
-		a {
-			background: $yellow;
-			padding: 5px 10px;
-		}
+		.link {
+            a {
+                background: $yellow;
+                padding: 5px 10px;
+            }
+            margin: 30px 0 0;
+        }
     } .sony {
         background: $purple;
 
@@ -33,10 +39,13 @@
 			padding: 20px 30px 20px;
 		}
 
-		a {
-			background: $yellow;
-			padding: 5px 10px;
-		}
+		.link {
+            a {
+                background: $yellow;
+                padding: 5px 10px;
+            }
+            margin: 30px 0 0;
+        }
     } .fujifilm {
         background: $purple;
 
@@ -44,10 +53,13 @@
 			padding: 20px 30px 20px;
 		}
 
-		a {
-			background: $yellow;
-			padding: 5px 10px;
-		}
+		.link {
+            a {
+                background: $yellow;
+                padding: 5px 10px;
+            }
+            margin: 30px 0 0;
+        }
     } .olympus {
         background: $purple;
 
@@ -55,36 +67,44 @@
 			padding: 20px 30px 20px;
 		}
 
-		a {
-			background: $yellow;
-			padding: 5px 10px;
-		}
+		.link {
+            a {
+                background: $yellow;
+                padding: 5px 10px;
+            }
+            margin: 30px 0 0;
+        }
     } 
     
     .canonimage {
-        background: url("deploy/img/canonimage.jpg") no-repeat;
+        background: url("/deploy/img/canonimage.jpg") no-repeat;
         background-size: cover;
         background-position: center;
+        height: 250px;
     }
     .nikonimage {
-        background: url("deploy/img/nikonimage.jpg") no-repeat;
+        background: url("/deploy/img/nikonimage.jpg") no-repeat;
         background-size: cover;
         background-position: center;
+        height: 250px;
     }
     .sonyimage {
-        background: url("deploy/img/sonyimage.jpg") no-repeat;
+        background: url("/deploy/img/sonyimage.jpg") no-repeat;
         background-size: cover;
         background-position: center;
+        height: 250px;
     }
     .fujifilmimage {
-        background: url("deploy/img/fujifilmimage.jpg") no-repeat;
+        background: url("/deploy/img/fujifilmimage.jpg") no-repeat;
         background-size: cover;
         background-position: center;
+        height: 250px;
     }
     .olympusimage {
-        background: url("deploy/img/olympusimage.jpg") no-repeat;
+        background: url("/deploy/img/olympusimage.jpg") no-repeat;
         background-size: cover;
         background-position: center;
+        height: 250px;
     }
 }
 
