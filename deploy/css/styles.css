@@ -583,6 +583,11 @@ header {
   background: #717AAD;
   padding: 30px;
 }
+header h1 {
+  font-size: 40px;
+  font: 600;
+  color: #313862;
+}
 header .search {
   height: 20px;
   margin: 20px 0 0;

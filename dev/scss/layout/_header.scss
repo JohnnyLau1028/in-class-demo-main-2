@@ -1,6 +1,11 @@
 header {
 	background: $lightpurpleblue;
 	padding: 30px;
+	h1 {
+		font-size: 40px;
+		font: 600;
+		color: $darkpurpleblue;
+	}
 
 	.search{
 		height: 20px;
