@@ -561,10 +561,11 @@ main {
     Typography
 ============= */
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: "Mukta", sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
+  font-family: "Rubik", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -603,17 +604,29 @@ header .search form button {
   background: #717AAD;
   padding: 50px 0;
 }
-.footer .location a {
-  color: #313862;
+.footer .location {
+  line-height: 1.75;
 }
-.footer h5, .footer h4 {
+.footer .location a {
+  color: #c3d1da;
+}
+.footer h4 {
   color: #313862;
+  font-weight: 600;
+  font-size: 20px;
+}
+.footer h5 {
+  color: #c3d1da;
+  font-weight: 600;
+  font-size: 16px;
 }
 .footer .icon {
   color: #Fae06a;
 }
 .footer address {
-  color: #313862;
+  color: #c3d1da;
+  font-weight: 500;
+  font-size: 12px;
 }
 .footer .email {
   margin: 20px 0;
@@ -630,6 +643,7 @@ header .search form button {
 .footer .social-icon a {
   color: #Fae06a;
   padding: 10px 5px;
+  font-size: 20px;
 }
 
 .hero .heroimage {
@@ -659,6 +673,24 @@ header .search form button {
     display: inline;
     padding: 15px;
   }
+}
+.hero h2 {
+  font-size: 28px;
+}
+.hero h4 {
+  font-size: 16px;
+  font: 400;
+}
+.hero h3 {
+  font: 600;
+  font-size: 20px;
+}
+.hero h5 {
+  font: 600;
+  font-size: 18px;
+}
+.hero i {
+  font-size: 20px;
 }
 
 @media (min-width: 768px) {
@@ -757,10 +789,14 @@ header .search form button {
   }
 }
 
+.cameratypes h2 {
+  font-weight: 500;
+}
 .cameratypes .mirrorlesscam {
   margin: 20px 0;
   padding: 20px;
   background: #313862;
+  color: #fbeba2;
 }
 .cameratypes .mirrorlesscam .orderhere {
   margin: 30px 0 0;
@@ -773,6 +809,7 @@ header .search form button {
   margin: 20px 0;
   padding: 20px;
   background: #313862;
+  color: #fbeba2;
 }
 .cameratypes .dslrcam .orderhere {
   margin: 30px 0 0;
@@ -788,6 +825,21 @@ header .search form button {
   }
 }
 
+.brands {
+  color: #7d7c89;
+}
+.brands .regular {
+  font-weight: 300;
+  font-size: 40px;
+}
+.brands h3 {
+  font-weight: 500;
+  font-size: 28px;
+}
+.brands p {
+  font-weight: 400;
+  font-size: 16px;
+}
 @media (min-width: 768px) {
   .brands {
     width: 80%;
@@ -796,6 +848,7 @@ header .search form button {
 }
 .brands .canon {
   background: #9d8ff4;
+  color: #000;
 }
 .brands .canon .new1 {
   padding: 20px 30px 20px;
@@ -809,6 +862,7 @@ header .search form button {
 }
 .brands .nikon {
   background: #9d8ff4;
+  color: #000;
 }
 .brands .nikon .new2 {
   padding: 20px 30px 20px;
@@ -822,6 +876,7 @@ header .search form button {
 }
 .brands .sony {
   background: #9d8ff4;
+  color: #000;
 }
 .brands .sony .new3 {
   padding: 20px 30px 20px;
@@ -835,6 +890,7 @@ header .search form button {
 }
 .brands .fujifilm {
   background: #9d8ff4;
+  color: #000;
 }
 .brands .fujifilm .new4 {
   padding: 20px 30px 20px;
@@ -848,6 +904,7 @@ header .search form button {
 }
 .brands .olympus {
   background: #9d8ff4;
+  color: #000;
 }
 .brands .olympus .new5 {
   padding: 20px 30px 20px;

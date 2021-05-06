@@ -1,8 +1,12 @@
 .cameratypes {
+	h2{
+		font-weight: 500;
+	}
 	.mirrorlesscam {
 		margin: 20px 0;
 		padding: 20px;
 		background: $darkpurpleblue;
+		color: $lightyellow;
 
 		.orderhere {
 			a {
@@ -16,6 +20,7 @@
 		margin: 20px 0;
 		padding: 20px;
 		background: $darkpurpleblue;
+		color: $lightyellow;
 
 		.orderhere {
 			a {

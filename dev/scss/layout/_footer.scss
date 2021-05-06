@@ -4,13 +4,22 @@
 	padding: 50px 0 ;
 
 	.location {
+		line-height: 1.75;
 		a {
-			color: $darkpurpleblue;
+			color: $lightblue;
 		}
 	}
 
-	h5,h4 {
+	h4 {
 		color: $darkpurpleblue;
+		font-weight: 600;
+        font-size: 20px;
+	}
+	
+	h5{
+		color: $lightblue;
+		font-weight: 600;
+        font-size: 16px;
 	}
 
 	.icon {
@@ -18,7 +27,9 @@
 	}
 
 	address {
-		color: $darkpurpleblue;
+		color: $lightblue;
+		font-weight: 500;
+        font-size: 12px;
 	}
 
 	.email {
@@ -37,5 +48,6 @@
 	.social-icon a {
 		color: $yellow;
 		padding: 10px 5px;
+		font-size: 20px;
 	}
 }
