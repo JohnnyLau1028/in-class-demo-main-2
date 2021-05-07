@@ -5,6 +5,10 @@
 
 	.location {
 		line-height: 1.75;
+		ul {
+			border-bottom: 1px solid $lightblue;
+			padding-bottom: 20px;
+			}
 		a {
 			color: $lightblue;
 		}
@@ -29,7 +33,7 @@
 	address {
 		color: $lightblue;
 		font-weight: 500;
-        font-size: 12px;
+        font-size: 16px;
 	}
 
 	.email {

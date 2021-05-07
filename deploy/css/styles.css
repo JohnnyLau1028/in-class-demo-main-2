@@ -612,6 +612,10 @@ header .search form button {
 .footer .location {
   line-height: 1.75;
 }
+.footer .location ul {
+  border-bottom: 1px solid #c3d1da;
+  padding-bottom: 20px;
+}
 .footer .location a {
   color: #c3d1da;
 }
@@ -631,7 +635,7 @@ header .search form button {
 .footer address {
   color: #c3d1da;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 16px;
 }
 .footer .email {
   margin: 20px 0;
